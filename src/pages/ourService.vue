@@ -2,7 +2,7 @@
   <div class="q-pa-md">
     <!-- Title -->
     <q-card flat bordered class="q-pa-md text-center bg-green-6 text-white">
-      <div class="text-h4">🍴 Sylhet Style Food Menu</div>
+      <div class="text-h4">Our Services</div>
     </q-card>
 
     <div class="row q-col-gutter-md q-mt-md">
@@ -10,7 +10,7 @@
       <div class="col-12 col-md-4">
         <q-card class="my-card bg-blue-1 text-dark shadow-3">
           <q-card-section>
-            <div class="text-h6 text-primary">🥐 Breakfast</div>
+            <div class="text-h6 text-primary">Breakfast</div>
             <q-separator spaced />
             <q-option-group
               v-model="selectedBreakfast"
@@ -26,7 +26,7 @@
       <div class="col-12 col-md-4">
         <q-card class="my-card bg-orange-1 text-dark shadow-3">
           <q-card-section>
-            <div class="text-h6 text-primary">🍛 Lunch</div>
+            <div class="text-h6 text-primary">Lunch</div>
             <q-separator spaced />
             <q-option-group
               v-model="selectedLunch"
@@ -42,7 +42,7 @@
       <div class="col-12 col-md-4">
         <q-card class="my-card bg-purple-1 text-dark shadow-3">
           <q-card-section>
-            <div class="text-h6 text-primary">🍲 Dinner</div>
+            <div class="text-h6 text-primary">Dinner</div>
             <q-separator spaced />
             <q-option-group
               v-model="selectedDinner"
@@ -59,7 +59,7 @@
     <div class="q-mt-lg">
       <q-card class="my-card bg-green-1 text-dark shadow-3">
         <q-card-section>
-          <div class="text-h6 text-primary">📦 Sylhet Packages</div>
+          <div class="text-h6 text-primary">Packages</div>
           <q-separator spaced />
           <q-option-group
             v-model="selectedPackage"
@@ -76,7 +76,7 @@
     <div class="q-mt-lg">
       <q-card class="my-card shadow-2">
         <q-card-section>
-          <div class="text-h6">📝 Your Selected Items</div>
+          <div class="text-h6">Your Selected Items</div>
           <q-separator spaced />
           <q-table
             flat
@@ -135,7 +135,11 @@ const tableColumns = [
 
 // Table Rows
 const tableRows = computed(() => [
-  { id: 1, meal: "Breakfast", item: selectedBreakfast.value.join(", ") || "None" },
+  {
+    id: 1,
+    meal: "Breakfast",
+    item: selectedBreakfast.value.join(", ") || "None",
+  },
   { id: 2, meal: "Lunch", item: selectedLunch.value.join(", ") || "None" },
   { id: 3, meal: "Dinner", item: selectedDinner.value.join(", ") || "None" },
   { id: 4, meal: "Package", item: selectedPackage.value || "None" },

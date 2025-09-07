@@ -5,7 +5,9 @@
       style="min-height: 100vh"
     >
       <q-card class="q-pa-lg" style="width: 500px; background: white">
-        <div class="text-h5 text-center q-mb-lg">Booking Confirmation</div>
+        <div class="text-h5 text-center text-bold q-mb-lg">
+          Booking Confirmation
+        </div>
 
         <q-form @submit.prevent="confirmBooking">
           <!-- 1. Customer Info -->
