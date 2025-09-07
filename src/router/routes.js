@@ -8,6 +8,7 @@ const routes = [
       { path: "login", component: () => import("pages/loGin.vue") },
       { path: "services", component: () => import("pages/ourService.vue") },
       { path: "booking", component: () => import("pages/booking.vue") },
+      { path: "billing", component: () => import("pages/billingPage.vue") },
     ],
   },
 
@@ -19,4 +20,4 @@ const routes = [
   },
 ];
 
-export default routes
+export default routes;
